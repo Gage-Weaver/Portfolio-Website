@@ -13,7 +13,8 @@
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
+          <li><a href="#work-experience">Experience</a></li>
+          <li><a href="#experience">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -29,7 +30,8 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onClick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onClick="toggleMenu()">Experience</a></li>
+          <li><a href="#work-experience" onClick="toggleMenu()">Experience</a></li>
+          <li><a href="#experience" onClick="toggleMenu()">Skills</a></li>
           <li><a href="#projects" onClick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onClick="toggleMenu()">Contact</a></li>
         </div>
@@ -83,7 +85,6 @@
             <h3>Experience</h3>
             <p>Software Engineering</p>
             <p>Machine Learning</p>
-            <p>Project Leadership</p>
           </div>
           <div class="details-container">
             <img
@@ -92,50 +93,103 @@
               class="icon"
             />
             <h3>Education</h3>
-            <p>B.S. Computer Engineering, Expected 2026<br /></p>
+            <p>B.S. Computer Engineering, Expected 2026</p>
             <p>University of Kansas</p>
           </div>
         </div>
         <div class="text-container">
           <h2>About Me</h2>
           <p>
-            Hello, my name is Gage Weaver, and I am a Computer Engineering student at the University of Kansas, with special interests in machine learning and software engineering.
+            Hello, I'm Gage Weaver, a Computer Engineering student at the University of Kansas with focuses in software engineering and machine learning. I'm currently working as a Software Engineer Intern at Wells Fargo, where I'm learning to plan, develop, and maintain enterprise-level software.
           </p>
 
-          <h3>Programming Skills</h3>
-          <p>
-            I primarily work with Python, which I use frequently in my projects. I enjoy participating in hackathons and recently won the "Most Creative Adobe Express Add-On" award at HackKU 2024.
-          </p>
-        
-          <h3>Relevant Coursework</h3>
-          <p>
-            Some of my coursework includes Software Engineering 1, Embedded Systems, Programming Paradigms, Programming 1 & 2, Circuits 1 & 2, Calculus 1-3, Discrete Structures, and Electromagnetics.
-          </p>
-        
-          <h3>Academic Achievements</h3>
-          <p>
-            I currently hold a GPA of 3.76 and have been recognized on the Spring & Fall 2023 Honor Rolls. Along with being designated as a Garmin Excellence Scholar
-          </p>
-        
-          <h3>Professional Experience</h3>
-          <p>
-            My most recent role is Information Technology / Data Analytics Intern at Adams Brown. During the Fall 2024 semester, I am working as a Supplemental Instructor for Circuits 1.
-          </p>
-        
           <h3>Machine Learning</h3>
           <p>
-            I have a special interest in machine learning! You can see my work below with my NBA MVP project or look at my performance in kaggle competitions. I recently placed 7th in the November competition with over 2600 participants! you can check out my profile by clicking <a href="https://www.kaggle.com/gageweaver711">here</a>.
+            I have a particular interest in machine learning. In order to hone this skill I have competed in various Kaggle competitions. Check out my <a href="https://www.kaggle.com/gageweaver711">Kaggle profile</a> to see more of my work.
+          </p>
+
+          <h3>Academic Excellence</h3>
+          <p>
+            Maintaining a 3.8 GPA while pursuing challenging coursework in Software Engineering, Embedded Systems, and Physics. I've been recognized on multiple Honor Rolls and designated as a Garmin Excellence Scholar.
           </p>
         </div>
       </div>
     </section>
+    
+    <section id="work-experience">
+      <p class="section__text__p1">My Professional</p>
+      <h1 class="title">Work Experience</h1>
+      <div class="work-experience-container">
+        <div class="job-card" onclick="toggleJobDetails('wells-fargo')">
+          <div class="job-header">
+            <div class="job-info">
+              <h3>Software Engineer Intern</h3>
+              <h4>Wells Fargo</h4>
+              <p class="job-duration">Summer 2025</p>
+            </div>
+            <div class="expand-icon" id="wells-fargo-icon">+</div>
+          </div>
+          <div class="job-details" id="wells-fargo-details">
+            <p><strong>Skills:</strong> Java, SpringBoot, React, MongoDB, Agile</p>
+            <p><strong>Responsibilities:</strong></p>
+            <ul>
+              <li>Developed and maintained full-stack applications using Java SpringBoot and React</li>
+              <li>Worked with MongoDB databases to reliably store and retrieve data</li>
+              <li>Participated in the full Agile development lifecycle, including sprint planning and code reviews</li>
+              <li>Gained experience with enterprise-level software architecture and deployment</li>
+            </ul>
+            <p><strong>Impact:</strong> Contributed to a new application for Platform Engineering teams to utilize. Drastically improving efficiency.</p>
+          </div>
+        </div>
+
+        <div class="job-card" onclick="toggleJobDetails('adams-brown')">
+          <div class="job-header">
+            <div class="job-info">
+              <h3>Information Technology and Data Analytics Intern</h3>
+              <h4>Adams Brown</h4>
+              <p class="job-duration">Summer 2024</p>
+            </div>
+            <div class="expand-icon" id="adams-brown-icon">+</div>
+          </div>
+          <div class="job-details" id="adams-brown-details">
+            <p><strong>Technologies:</strong> DAX, Power BI, SQL, PowerShell</p>
+            <p><strong>Key Projects:</strong></p>
+            <ul>
+              <li>Developed a key data analytics project utilizing DAX, Power BI, and SQL focused on company financials for an internal team</li>
+              <li>Designed and implemented automation for the onboarding process using PowerShell, completely eliminating the need for manual email signature creation</li>
+            </ul>
+            <p><strong>Recognition:</strong> First intern in the firm's history to be nominated for an Adams Brown One award.</p>
+          </div>
+        </div>
+
+        <div class="job-card" onclick="toggleJobDetails('teaching')">
+          <div class="job-header">
+            <div class="job-info">
+              <h3>Supplemental Instructor</h3>
+              <h4>University of Kansas</h4>
+              <p class="job-duration">Fall 2024 - Spring 2025</p>
+            </div>
+            <div class="expand-icon" id="teaching-icon">+</div>
+          </div>
+          <div class="job-details" id="teaching-details">
+            <p><strong>Course:</strong> Circuits 1 (EECS 202)</p>
+            <p><strong>Responsibilities:</strong></p>
+            <ul>
+              <li>Held daily study sessions for students to review course material and ask questions</li>
+              <li>Provided a supportive environment for students to bring their questions and get help</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
     <section id="experience">
       <p class="section__text__p1">Check Out My</p>
-      <h1 class="title">Experience</h1>
+      <h1 class="title">Skills</h1>
       <div class="experience-details-container">
-        <div class="about-containers">
+        <div class="experience-single-container">
           <div class="details-container">
-            <h2 class="experience-subtitle">Programming/Data Science</h2>
+            <h2 class="experience-subtitle">Software Engineering</h2>
             <div class="article-container">
               <article>
                 <div class="article-item">
@@ -145,19 +199,37 @@
               </article>
               <article>
                 <div class="article-item">
-                  <h3>Pandas</h3>
+                  <h3>JavaScript</h3>
                   <p>Advanced</p>
                 </div>
               </article>
               <article>
                 <div class="article-item">
-                  <h3>JavaScript</h3>
+                  <h3>Pandas</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
               <article>
                 <div class="article-item">
-                  <h3>Object-Oriented Programming</h3>
+                  <h3>Java</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <div class="article-item">
+                  <h3>React</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <div class="article-item">
+                  <h3>MongoDB</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <div class="article-item">
+                  <h3>Machine Learning</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
@@ -175,60 +247,19 @@
               </article>
               <article>
                 <div class="article-item">
-                  <h3>Flask</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <div class="article-item">
                   <h3>HTML/CSS</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
               <article>
                 <div class="article-item">
+                  <h3>SpringBoot</h3>
+                  <p>Familiar</p>
+                </div>
+              </article>
+              <article>
+                <div class="article-item">
                   <h3>C/C++</h3>
-                  <p>Familiar</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-subtitle">Computer Engineering</h2>
-            <div class="article-container">
-              <article>
-                <div class="article-item">
-                  <h3>Circuit Analysis</h3>
-                  <p>Advanced</p>
-                </div>
-              </article>
-              <article>
-                <div class="article-item">
-                  <h3>Circuit Design</h3>
-                  <p>Intermediate</p>
-                </div class="article-item">
-              </article>
-              <article>
-                <div class="article-item">
-                  <h3>PSpice</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <div class="article-item">
-                  <h3>Digital Logic Design</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <div class="article-item">
-                  <h3>PCB Design</h3>
-                  <p>Familiar</p>
-                </div>
-              </article>
-              <article>
-                <div class="article-item">
-                  <h3>VHDL</h3>
                   <p>Familiar</p>
                 </div>
               </article>
@@ -240,57 +271,100 @@
     <section id="projects">
       <p class="section__text__p1">Browse my</p>
       <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
-          </div>
-          <h2 class="experience-subtitle project-title">PocketDJ</h2>
-          <div class="btn-container">
-            <button 
-            class="btn btn-color-2 project-btn" 
-            onclick="location.href='https://github.com/Gage-Weaver/POCKETDJ'">
-              Github
-            </button>
-            <button 
-            class="btn btn-color-1 project-btn" 
-            onclick="location.href='https://devpost.com/software/pocketdj'">
-              Devpost
-            </button>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
-          </div>
-          <h2 class="experience-subtitle project-title">NBA MVP Predictor</h2>
-          <div class="btn-container">
-            <button 
-            class="btn btn-color-2 project-btn" 
-            onclick="location.href='https://github.com/Gage-Weaver/NBA-MVP-Predictor'">
-              Github
-            </button>
-            <button 
-            class="btn btn-color-1 project-btn" 
-            onclick="location.href='https://youtu.be/twmgrLGGbjI'">
-              Youtube Demo
-            </button>
+      <div class="projects-container">
+        <div class="project-card">
+          <img src="./assets/petai-image.jpg" alt="PeTAI Project" class="project-img" />
+          <div class="project-content">
+            <h2 class="project-title">PeTAI</h2>
+            <p class="project-description">A cross-platform Personal Trainer Assistant that uses computer vision to provide real-time feedback on workout form. Built with Swift/SwiftUI for iOS and JavaScript/ML Kit for web, analyzing movement patterns to improve exercise safety and effectiveness.</p>
+            <div class="btn-container">
+              <button 
+                class="btn btn-color-2 project-btn" 
+                onclick="window.open('https://github.com/carlosmbe/PetAI')">
+                Github
+              </button>
+              <button 
+                class="btn btn-color-1 project-btn" 
+                onclick="window.open('https://devpost.com/software/petai')">
+                Devpost
+              </button>
+            </div>
           </div>
         </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-2.PNG" alt="Project 2" class="project-img" />
-          </div>
-          <h2 class="experience-subtitle project-title">Portfolio Tracker</h2>
-          <div class="btn-container">
-            <button 
-            class="btn btn-color-2 project-btn" 
-            onclick="location.href='https://www.youtube.com/watch?v=DXgHZPf3MUU'">
-              Youtube Demo
-            </button>
+        
+        <div class="project-card">
+          <img src="./assets/CYS.png" alt="CheckYoSelf Project" class="project-img" />
+          <div class="project-content">
+            <h2 class="project-title">CheckYoSelf</h2>
+            <p class="project-description">A peer-to-peer authentic items marketplace featuring 3D scanning and hologram verification. Users can create 3D scans of items for authenticity verification, reducing reliance on traditional reseller platforms. Built with iPhone scanning tools and Pinata for file storage.</p>
+            <div class="btn-container">
+              <button 
+                class="btn btn-color-2 project-btn" 
+                onclick="window.open('https://github.com/Gage-Weaver/CheckYoSelf')">
+                Github
+              </button>
+              <button 
+                class="btn btn-color-1 project-btn" 
+                onclick="window.open('https://devpost.com/software/checkyoself')">
+                Devpost
+              </button>
+            </div>
           </div>
         </div>
+
+        <div class="project-card">
+          <img src="./assets/project-1.png" alt="PocketDJ Project" class="project-img" />
+          <div class="project-content">
+            <h2 class="project-title">PocketDJ</h2>
+            <p class="project-description">A web app and Adobe Express add-on that creates personalized Spotify playlists using AI. Winner of "Most Creative Adobe Express Add-On" at HackKU 2024.</p>
+            <div class="btn-container">
+              <button 
+                class="btn btn-color-2 project-btn" 
+                onclick="window.open('https://github.com/Gage-Weaver/POCKETDJ')">
+                Github
+              </button>
+              <button 
+                class="btn btn-color-1 project-btn" 
+                onclick="window.open('https://devpost.com/software/pocketdj')">
+                Devpost
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <img src="./assets/project-3.png" alt="NBA MVP Predictor Project" class="project-img" />
+          <div class="project-content">
+            <h2 class="project-title">NBA MVP Predictor</h2>
+            <p class="project-description">Machine learning model that predicts the NBA MVP vote using historical player statistics and advanced analytics. Built with Python and scikit-learn.</p>
+            <div class="btn-container">
+              <button 
+                class="btn btn-color-2 project-btn" 
+                onclick="window.open('https://github.com/Gage-Weaver/NBA-MVP-Predictor')">
+                Github
+              </button>
+              <button 
+                class="btn btn-color-1 project-btn" 
+                onclick="window.open('https://youtu.be/twmgrLGGbjI')">
+                Demo
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <img src="./assets/project-2.PNG" alt="Portfolio Tracker Project" class="project-img" />
+          <div class="project-content">
+            <h2 class="project-title">Portfolio Tracker</h2>
+            <p class="project-description">A comprehensive investment portfolio tracking application with real-time stock data integration and performance analytics dashboard.</p>
+            <div class="btn-container">
+              <button 
+                class="btn btn-color-2 project-btn" 
+                onclick="window.open('https://www.youtube.com/watch?v=DXgHZPf3MUU')">
+                Demo
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -317,12 +391,13 @@
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
+            <li><a href="#work-experience">Experience</a></li>
+            <li><a href="#experience">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
       </nav>
-      <p>Copyright &#169; 2024 Gage Weaver. All Rights Reserved</p>
+      <p>Copyright &#169; 2025 Gage Weaver. All Rights Reserved</p>
     </footer>
     <script src="script.js"></script>
   </body>

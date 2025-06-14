@@ -554,6 +554,21 @@ footer p {
   color: #ccc;
 }
 
+/* WORK EXPERIENCE SECTION */
+
+.job-details {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  padding: 0 2rem;
+}
+
+.job-details.open {
+  max-height: 600px; /* Increased from 500px */
+  padding: 0 2rem 2rem 2rem;
+  overflow-y: auto; /* Add scroll if content is still too long */
+}
+
 /* RESPONSIVE DESIGN */
 
 @media screen and (max-width: 1200px) {
@@ -603,6 +618,24 @@ footer p {
     flex-direction: column;
     padding: 1.5rem;
   }
+  
+  .job-header {
+    padding: 1.5rem;
+  }
+  
+  .job-details.open {
+    max-height: 80vh; /* Use viewport height for better mobile experience */
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    overflow-y: auto;
+  }
+  
+  .job-details p {
+    margin-bottom: 0.8rem; /* Slightly tighter spacing */
+  }
+  
+  .job-details li {
+    margin-bottom: 0.4rem; /* Tighter list spacing */
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -634,6 +667,21 @@ footer p {
   
   .article-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .job-details.open {
+    max-height: 75vh; /* Even more conservative on small screens */
+    padding: 0 1rem 1rem 1rem;
+  }
+  
+  .job-details p {
+    font-size: 0.9rem; /* Slightly smaller text */
+    line-height: 1.5;
+  }
+  
+  .job-details li {
+    font-size: 0.9rem;
+    line-height: 1.4;
   }
 }
 
@@ -709,8 +757,9 @@ footer p {
 }
 
 .job-details.open {
-  max-height: 500px;
+  max-height: 600px; /* Increased from 500px */
   padding: 0 2rem 2rem 2rem;
+  overflow-y: auto; /* Add scroll if content is still too long */
 }
 
 .job-details p {
@@ -741,6 +790,63 @@ footer p {
   }
   
   .job-details.open {
+    max-height: 80vh; /* Use viewport height for better mobile experience */
     padding: 0 1.5rem 1.5rem 1.5rem;
+    overflow-y: auto;
+  }
+  
+  .job-details p {
+    margin-bottom: 0.8rem; /* Slightly tighter spacing */
+  }
+  
+  .job-details li {
+    margin-bottom: 0.4rem; /* Tighter list spacing */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .btn-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn {
+    width: 100%;
+    max-width: 250px;
+  }
+  
+  .nav-links {
+    gap: 1rem;
+  }
+  
+  section {
+    padding: 2rem 1rem;
+  }
+  
+  .projects-container {
+    padding: 0;
+  }
+  
+  .project-content {
+    padding: 1.5rem;
+  }
+  
+  .article-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .job-details.open {
+    max-height: 75vh; /* Even more conservative on small screens */
+    padding: 0 1rem 1rem 1rem;
+  }
+  
+  .job-details p {
+    font-size: 0.9rem; /* Slightly smaller text */
+    line-height: 1.5;
+  }
+  
+  .job-details li {
+    font-size: 0.9rem;
+    line-height: 1.4;
   }
 }
